@@ -61,9 +61,68 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
 }
 
 .header-section {
   height: 100vh;
+}
+.header-section .container {
+  height: 100%;
+}
+.header-section_content, .header-section_playbutton {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+}
+.header-section_content h1 {
+  font-size: 5rem;
+  font-weight: 500;
+  width: 50%;
+}
+.header-section_content h2 {
+  text-transform: uppercase;
+}
+.header-section_content h2,
+.header-section_content span {
+  font-size: 1.5rem;
+}
+.header-section_content h1,
+.header-section_content span {
+  margin-top: 2.5rem;
+}
+.header-section_content span {
+  display: inline-block;
+  text-transform: capitalize;
+  margin-top: 3rem;
+}
+.header-section_playbutton {
+  position: absolute;
+  right: 20%;
+}
+.header-section_playbutton .playbutton {
+  width: 100px;
+  height: 100px;
   background-color: red;
+  border-radius: 50%;
+}
+.header-section_nav {
+  margin: 3rem auto;
+}
+.header-section_nav ul {
+  display: flex;
+  justify-content: center;
+}
+.header-section_nav ul li {
+  list-style: none;
+}
+.header-section_nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 400;
+  padding: 1rem 1.5rem;
+}
+.header-section_nav ul li a:hover {
+  color: #DA0A2C;
 }
