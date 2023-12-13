@@ -19,6 +19,7 @@ body {
         position: absolute;
         top: 40%;
         transform: translateY(-50%);
+        
     }
     &_content {
         h1 {
@@ -44,14 +45,21 @@ body {
         }
     }
     &_playbutton {
-        position: absolute;
         right: 20%;
         .playbutton {
+            position: relative;
             transition: opacity 0.2s ease-in-out;
-            width: 100px;
-            height: 100px;
+            width: 90px;
+            height: 90px;
             background-color: red;
             border-radius: 50%;
+            i{
+                position: absolute;
+                top: 50%;
+                left: 54%;
+                transform: translate(-50%, -50%);
+                font-size: 2rem;
+            }
         }
     }
     &_nav {

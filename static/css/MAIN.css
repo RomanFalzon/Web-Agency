@@ -57,7 +57,7 @@ table {
 }
 
 .half-opacity {
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 body {
@@ -105,15 +105,22 @@ body {
   margin-top: 3rem;
 }
 .header-section_playbutton {
-  position: absolute;
   right: 20%;
 }
 .header-section_playbutton .playbutton {
+  position: relative;
   transition: opacity 0.2s ease-in-out;
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   background-color: red;
   border-radius: 50%;
+}
+.header-section_playbutton .playbutton i {
+  position: absolute;
+  top: 50%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
 }
 .header-section_nav {
   margin: 3rem auto;
