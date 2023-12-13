@@ -1,3 +1,7 @@
-import myFunction, { anotherFunction } from './js/helpers.js';
+import { toggler } from './js/helpers.js';
 
-myFunction('Hello there :)');
+const myButton = document.getElementById('playbutton');
+
+myButton.addEventListener('click', () => {
+  toggler.toggleOpacity(myButton);
+});

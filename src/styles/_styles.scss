@@ -46,8 +46,8 @@ body {
     &_playbutton {
         position: absolute;
         right: 20%;
-
         .playbutton {
+            transition: opacity 0.2s ease-in-out;
             width: 100px;
             height: 100px;
             background-color: red;
