@@ -121,16 +121,32 @@ body {
 .header-section_nav ul {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .header-section_nav ul li {
   list-style: none;
 }
+.header-section_nav ul li .home-link {
+  font-size: 1.5rem;
+}
 .header-section_nav ul li a {
+  transition: all 0.2s ease-in-out;
   text-decoration: none;
   color: #fff;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 400;
   padding: 1rem 1.5rem;
+  position: relative;
+}
+.header-section_nav ul li a:after {
+  content: attr(data-number);
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  transform: translateX(-50%);
+  font-size: 0.5rem;
+  font-weight: bold;
+  color: #cccccc;
 }
 .header-section_nav ul li a:hover {
   color: #DA0A2C;

@@ -59,17 +59,34 @@ body {
         ul {
             display: flex;
             justify-content: center;
+            align-items: center;
             li {
                 list-style: none;
+                .home-link{
+                    font-size: $font-size-2xl;
+                }
+
                 a {
+                    transition: all 0.2s ease-in-out;
                     text-decoration: none;
                     color: $primary-text-color;
-                    font-size: $font-size-xl;
+                    font-size: $font-size-base;
                     font-weight: 400;
                     padding: 1rem 1.5rem;
-                }
-                a:hover {
-                    color: $primary-color;
+                    position: relative;
+                    &:after {
+                        content: attr(data-number);
+                        position: absolute;
+                        top: 5px;
+                        right: 20px;
+                        transform: translateX(-50%);
+                        font-size: $font-size-sl;
+                        font-weight: bold;
+                        color: $primary-text-color-darker;
+                    }
+                    &:hover{
+                        color: $primary-color;
+                    }
                 }
             }
         }
