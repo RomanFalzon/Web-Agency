@@ -1,28 +1,27 @@
 // Media query mixin for small screens and above
 @mixin media-small {
-    @media (min-width: $breakpoint-sm) {
-      @content;
-    }
+  @media (min-width: $breakpoint-sm) {
+    @content;
   }
-  
-  // Media query mixin for medium screens and above
-  @mixin media-medium {
-    @media (min-width: $breakpoint-md) {
-      @content;
-    }
+}
+
+// Media query mixin for medium screens and above
+@mixin media-medium {
+  @media (min-width: $breakpoint-md) {
+    @content;
   }
-  
-  // Media query mixin for large screens and above
-  @mixin media-large {
-    @media (min-width: $breakpoint-lg) {
-      @content;
-    }
+}
+
+// Media query mixin for large screens and above
+@mixin media-large {
+  @media (min-width: $breakpoint-lg) {
+    @content;
   }
-  
-  // Media query mixin for extra-large screens and above
-  @mixin media-xlarge {
-    @media (min-width: $breakpoint-xl) {
-      @content;
-    }
+}
+
+// Media query mixin for extra-large screens and above
+@mixin media-xlarge {
+  @media (min-width: $breakpoint-xl) {
+    @content;
   }
-  
+}

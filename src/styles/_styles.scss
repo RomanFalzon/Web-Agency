@@ -1,6 +1,14 @@
 body{
     font-family: 'Roboto', sans-serif;
+    background-color: $secondary-color;
+    color: $primary-text-color;
 }
-h1{
-    color: red;
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-section{
+    height: 100vh;
+    background-color: red;
 }
